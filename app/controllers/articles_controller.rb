@@ -8,9 +8,6 @@ class ArticlesController < ApplicationController
     @article = Article.find params[:id]
   end
 
-  def new
-  end
-
   def create
     @article = Article.new article_params
     if @article.save
@@ -21,10 +18,10 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    if params[:q].nil?
+    if params[:articles].nil?
       @articles = []
     else
-      @articles = Article.search params[:q]
+      @articles = Article.search params[:articles]
     end
   end
 
