@@ -49,8 +49,8 @@ Open this url: http://localhost:9200 and you’ll see ElasticSearch respond like
 ```
 
 ## Add Gem to Gemfile or if present then ignore it:
-*gem 'elasticsearch-model'
-*gem 'elasticsearch-rails'
+* gem 'elasticsearch-model'
+* gem 'elasticsearch-rails'
 
 
 ## Install Gem:
